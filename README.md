@@ -42,6 +42,6 @@ To run EarthLoop on your device:
 - [Wireframe](wireframe_link)
 - [UI Design]([ui_design_link](https://rb.gy/cjwbtd))
 - [Abstract] https://drive.google.com/file/d/1XoL2DpK4kbRzPKTbgbZrI_GYqPa9zG2h/view
-- [Presentation] (Phttps://rb.gy/cjwbtd)
+- [Presentation] (https://rb.gy/cjwbtd)
 
 Feel free to explore our project and join us in our mission to create a greener, more sustainable future with EarthLoop!
