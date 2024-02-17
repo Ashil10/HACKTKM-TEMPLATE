@@ -13,10 +13,10 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Delay for 3 seconds and then navigate to LoginPage
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 2), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => collector()),
       );
     });
   }
@@ -29,12 +29,12 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Image(
+           /* Image(
               image: NetworkImage(
                   'https://m.media-amazon.com/images/S/aplus-media-library-service-media/ede328f6-882f-475e-8566-b4fdd0cce9d0.__CR0,140,1610,498_PT0_SX970_V1___.jpg'),
               fit: BoxFit.contain,
-            ),
-            CircularProgressIndicator(),
+            )*/
+            Image.asset('assets/images/logo.jpg'),
           ],
         ),
       ),
