@@ -40,7 +40,7 @@ To run EarthLoop on your device:
 4. Explore the app features and contribute to rural sustainability!
 
 ## Other Links
-- [Wireframe](https://www.canva.com/en_in/)
+- [Wireframe]([https://www.canva.com/en_in/](https://www.canva.com/design/DAF89q8n-S4/V8BQMLE1Rl7btt1QI9JI_Q/edit?utm_content=DAF89q8n-S4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
 - [UI Design]
 - [Abstract](https://drive.google.com/file/d/1XoL2DpK4kbRzPKTbgbZrI_GYqPa9zG2h/view)
 - [Presentation](https://rb.gy/cjwbtd)
