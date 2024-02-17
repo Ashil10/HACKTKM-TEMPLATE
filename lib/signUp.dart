@@ -14,6 +14,8 @@ class _SignUpPageState extends State<SignUpPage> {
   final TextEditingController pinCodeController = TextEditingController();
   String? _selectedPinCode;
   String? _selectedLoginType;
+  final TextEditingController p1Controller = TextEditingController();
+  final TextEditingController p2Controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,8 @@ class _SignUpPageState extends State<SignUpPage> {
           SizedBox(height: 10.0),
           DropdownButtonFormField<String>(
             value: _selectedLoginType,
-            decoration: InputDecoration(labelText: 'Register As'),
+            decoration: InputDecoration(label: Text('Register As'),
+                border:OutlineInputBorder()),
             onChanged: (String? newValue) {
               setState(() {
                 _selectedLoginType = newValue;
@@ -51,27 +54,32 @@ class _SignUpPageState extends State<SignUpPage> {
           SizedBox(height: 20.0),
           TextFormField(
             controller: nameController,
-            decoration: InputDecoration(labelText: 'Name'),
+            decoration: InputDecoration(label: Text('Name'),
+                border:OutlineInputBorder()),
           ),
           SizedBox(height: 20.0),
           TextFormField(
             controller: usernameController,
-            decoration: InputDecoration(labelText: 'Username'),
+            decoration: InputDecoration(label: Text('UserName'),
+                border:OutlineInputBorder()),
           ),
           SizedBox(height: 10.0),
           TextFormField(
             controller: addressController,
-            decoration: InputDecoration(labelText: 'Address'),
+            decoration: InputDecoration(label: Text('Address'),
+                border:OutlineInputBorder()),
           ),
           SizedBox(height: 10.0),
           TextFormField(
             controller: phoneNumberController,
-            decoration: InputDecoration(labelText: 'Phone Number'),
+            decoration: InputDecoration(label: Text('Phone Number'),
+                border:OutlineInputBorder()),
           ),
           SizedBox(height: 10.0),
           DropdownButtonFormField<String>(
             value: _selectedPinCode,
-            decoration: InputDecoration(labelText: 'Pin Code'),
+            decoration: InputDecoration(label: Text('Pincode'),
+                border:OutlineInputBorder()),
             onChanged: (String? newValue) {
               setState(() {
                 _selectedPinCode = newValue;
@@ -88,7 +96,19 @@ class _SignUpPageState extends State<SignUpPage> {
               );
             }).toList(),
           ),
+          TextFormField(
+            controller: p1Controller,
+            decoration: InputDecoration(label: Text('Password'),
+                border:OutlineInputBorder()),
+            obscureText: true,
+          ),
           SizedBox(height: 20.0),
+          TextFormField(
+            controller: p2Controller,
+            decoration: InputDecoration(label: Text('Confirm Password'),
+                border:OutlineInputBorder()),
+            obscureText: true,
+          ),
           ElevatedButton(
             onPressed: () {
               // Handle saving data or moving to the next step
@@ -102,17 +122,20 @@ class _SignUpPageState extends State<SignUpPage> {
   }
 
   void _navigateToNextPage() {
+    String p1 = p1Controller.text;
+    String p2 = p2Controller.text;
     // You can navigate to the next page or perform other actions
     // For now, let's print the entered details
-    print('Name: ${nameController.text}');
-    print('Username: ${usernameController.text}');
-    print('Address: ${addressController.text}');
-    print('Phone Number: ${phoneNumberController.text}');
-    print('Pin Code: ${_selectedPinCode}');
-    print('Login Type: ${_selectedLoginType}');
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => collector()),
-    );
+    if(p1==p2) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => collector()),
+      );
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Registered Successfully!!")));
+    }
+    else
+      {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Passwords do not mismatch!!")));
+      }
   }
 }
