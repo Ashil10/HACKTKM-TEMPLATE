@@ -11,7 +11,8 @@ Welcome to EarthLoop, where sustainability meets innovation! Below, we present o
 4. K P Ashil (GitHub: Ashil10)
 
 ## Link to Project
-[Live Demo](live_link)
+[Explore the Demo](live_link)
+Please note: As our project is based on a Flutter application, we are unable to provide a live link. However, you can explore the demo to get a glimpse of our project's features and functionality.
 
 ## How it Works?
 EarthLoop is a comprehensive waste management solution designed to transform rural sustainability. Our project works by providing a subscription-based waste management service that includes waste collection, segregation, recycling, and responsible disposal. Users can subscribe to EarthLoop through our mobile app and schedule waste pickups right at their doorstep. The collected waste is then meticulously segregated, with recyclable materials sold to local vendors to contribute to the circular economy. Through data-driven insights and an incentive program, EarthLoop encourages users to reduce waste and increase recycling efforts.
