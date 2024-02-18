@@ -19,7 +19,7 @@ EarthLoop is a comprehensive waste management solution designed to transform rur
 
 Watch our demo video to see EarthLoop in action!
 
-[Demo Video](demo_video_link)
+[Demo Video](https://www.youtube.com/watch?v=AqVM6okTqBM)
 
 ## Technologies Used
 - Flutter: For mobile app development
@@ -41,8 +41,8 @@ To run EarthLoop on your device:
 
 ## Other Links
 - [Wireframe](https://www.canva.com/design/DAF89q8n-S4/V8BQMLE1Rl7btt1QI9JI_Q/edit?utm_content=DAF89q8n-S4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [UI Design]
+- [UI Design](https://drive.google.com/file/d/1aGmhUqRqRurvJSFJhFh17KuBuimiJDnf/view?usp=sharing)
 - [Abstract](https://drive.google.com/file/d/1XoL2DpK4kbRzPKTbgbZrI_GYqPa9zG2h/view)
-- [Presentation](https://rb.gy/cjwbtd)
+- [Presentation](https://docs.google.com/presentation/d/1oZw1RLoQ0zYpetrGoNon2r0ACUpStpZT/edit?usp=drive_link&ouid=100863133379565973271&rtpof=true&sd=true)
 
 Feel free to explore our project and join us in our mission to create a greener, more sustainable future with EarthLoop!
