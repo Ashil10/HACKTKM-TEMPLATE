@@ -21,6 +21,4 @@ In the EarthLoop app, credits are earned exclusively for activities related to r
 ## Conclusion
 The EarthLoop app's exclusive focus on recyclable waste management and its innovative credit system provide users with a powerful tool for promoting sustainability and environmental stewardship. By incentivizing recycling activities and rewarding user participation, EarthLoop not only encourages individual action but also contributes to the broader goal of creating a greener and more sustainable future.
 
----
 
-You can add additional sections or customize the content further based on your preferences and specific details of the app.
