@@ -1,24 +1,48 @@
+![image](HACK4TKM.jpeg)
 
+# EARTHLOOP - HACK4TKM
 
-# EarthLoop App
+Welcome to EarthLoop, where sustainability meets innovation! Below, we present our project details and how it can revolutionize waste management in rural areas.
 
-## Overview
-The EarthLoop app is a dedicated platform for managing recyclable waste, promoting sustainability, and environmental consciousness. With its user-friendly interface and innovative features, it empowers users to play an active role in recycling efforts while earning rewards for their contributions.
+## Team Members
+1. Felix Sabu (GitHub: 65lix)
+2. Parvathy Gopan (GitHub: parvathy-gopan)
+3. Anandhu T G (GitHub: anandhutg)
+4. K P Ashil (GitHub: Ashil10)
 
-## Credit System
-In the EarthLoop app, credits are earned exclusively for activities related to recycling. Users accumulate credits by participating in various recycling initiatives, such as sorting and segregating recyclable materials, bringing them to designated collection points, or participating in recycling awareness programs.
+## Link to Project
+[Explore the Demo](live_link)
+Please note: As our project is based on a Flutter application, we are unable to provide a live link. However, you can explore the demo to get a glimpse of our project's features and functionality.
 
-## How It Works
-1. **Earn Credits:** Users earn credits by engaging in recycling activities, such as properly sorting and depositing recyclable materials into designated bins, participating in community clean-up events, or attending recycling workshops.
-2. **Redeem Rewards:** These credits can be redeemed for a variety of rewards, including discounts on subscription fees, vouchers for eco-friendly products, or entries into sustainability-focused events and activities.
-3. **Track Progress:** The app provides users with a convenient way to track their recycling activities and monitor their credit accumulation. Users can view their progress towards sustainability goals and gain insights into their environmental impact.
+## How it Works?
+EarthLoop is a comprehensive waste management solution designed to transform rural sustainability. Our project works by providing a subscription-based waste management service that includes waste collection, segregation, recycling, and responsible disposal. Users can subscribe to EarthLoop through our mobile app and schedule waste pickups right at their doorstep. The collected recyclable materials are then sold to local vendors to contribute to the circular economy. Through data-driven insights and an incentive program, EarthLoop encourages users to reduce waste and increase recycling efforts.
 
-## Benefits
-1. **Promotes Recycling:** By focusing exclusively on recyclable waste management, the EarthLoop app encourages users to prioritize recycling and minimize waste generation.
-2. **Incentivizes Participation:** The credit system incentivizes users to actively participate in recycling efforts, driving higher levels of engagement and participation in sustainability initiatives.
-3. **Fosters Environmental Awareness:** Through its rewards and incentives, the app raises awareness about the importance of recycling and promotes eco-conscious behavior among users.
+Watch our demo video to see EarthLoop in action!
 
-## Conclusion
-The EarthLoop app's exclusive focus on recyclable waste management and its innovative credit system provide users with a powerful tool for promoting sustainability and environmental stewardship. By incentivizing recycling activities and rewarding user participation, EarthLoop not only encourages individual action but also contributes to the broader goal of creating a greener and more sustainable future.
+[Demo Video](https://www.youtube.com/watch?v=AqVM6okTqBM)
 
+## Technologies Used
+- Flutter: For mobile app development
+- Canva: For design elements
 
+## How to Configure
+To set up the EarthLoop project, follow these steps:
+1. Clone the repository from GitHub.
+2. Install Flutter and necessary dependencies.
+3. Configure API keys for any necessary integrations.
+4. Run the project on your preferred platform.
+
+## How to Run
+To run EarthLoop on your device:
+1. Install the EarthLoop app from the provided repository.
+2. Sign up for a subscription or log in if you already have an account.
+3. Schedule waste pickups and track your recycling efforts.
+4. Explore the app features and contribute to rural sustainability!
+
+## Other Links
+- [Wireframe](https://www.canva.com/design/DAF89q8n-S4/V8BQMLE1Rl7btt1QI9JI_Q/edit?utm_content=DAF89q8n-S4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [UI Design](https://drive.google.com/file/d/1aGmhUqRqRurvJSFJhFh17KuBuimiJDnf/view?usp=sharing)
+- [Abstract](https://drive.google.com/file/d/1XoL2DpK4kbRzPKTbgbZrI_GYqPa9zG2h/view)
+- [Presentation](https://docs.google.com/presentation/d/1oZw1RLoQ0zYpetrGoNon2r0ACUpStpZT/edit?usp=drive_link&ouid=100863133379565973271&rtpof=true&sd=true)
+
+Feel free to explore our project and join us in our mission to create a greener, more sustainable future with EarthLoop!
