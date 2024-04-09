@@ -1,9 +1,24 @@
-import 'package:codeshefs/home_page.dart';
+import 'package:codeshefs/shared/constants.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'splashscreen.dart';
-void main()
+import 'package:flutter/foundation.dart';
+void main() async
 {
+  WidgetsFlutterBinding.ensureInitialized();
+  if(kIsWeb){
+    await Firebase.initializeApp(
+        options: FirebaseOptions(
+            apiKey: Constants.apiKey,
+            appId: Constants.appId,
+            messagingSenderId: Constants.messagingSenderId,
+            projectId: Constants.projectId));
+  }
+
+  else {
+    await Firebase.initializeApp();
+  }
   runApp(MyApp());
 }
 

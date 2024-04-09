@@ -1,4 +1,5 @@
 import 'package:codeshefs/home_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -60,7 +61,7 @@ class _SignUpPageState extends State<SignUpPage> {
           SizedBox(height: 20.0),
           TextFormField(
             controller: usernameController,
-            decoration: InputDecoration(label: Text('UserName'),
+            decoration: InputDecoration(label: Text('E-mail'),
                 border:OutlineInputBorder()),
           ),
           SizedBox(height: 10.0),
@@ -127,10 +128,16 @@ class _SignUpPageState extends State<SignUpPage> {
     // You can navigate to the next page or perform other actions
     // For now, let's print the entered details
     if(p1==p2) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => collector()),
-      );
+      FirebaseAuth.instance.createUserWithEmailAndPassword(
+          email: usernameController.text,
+          password: p1Controller.text).then((value) {
+        print("Creted new account");
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => collector(),));
+      }).onError((error, stackTrace) {
+        print("Error ${error.toString()}");
+      });
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Registered Successfully!!")));
     }
     else

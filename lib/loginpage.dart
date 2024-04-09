@@ -1,4 +1,6 @@
 import 'package:codeshefs/collector_account.dart';
+import 'package:codeshefs/home_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'userScreen.dart';
 //import 'collectorscreen.dart';
@@ -46,7 +48,7 @@ class _LoginCredPageState extends State<LoginCredPage> {
             SizedBox(height: 20.0),
             TextFormField(
               controller: usernameController,
-              decoration: InputDecoration(label: Text('Username'),
+              decoration: InputDecoration(label: Text('E-mail'),
               border:OutlineInputBorder()),
             ),
             SizedBox(height: 20.0),
@@ -83,39 +85,22 @@ class _LoginCredPageState extends State<LoginCredPage> {
     else if(password.isEmpty)
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Enter your password")));
     else if (_selectedLoginType == 'User') {
-      if (username == 'codechef' && password == '123' ||
-          username == 'Codechef' && password == '123' ||
-          username == 'Codechefs' && password == '123' ||
-          username == 'codechef' && password == '123' ||
-          username == 'CODECHEFS' && password == '123' ||
-          username == 'CODECHEFS' && password == '123')
-        {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => Account()),
-        );
-    }
-      else
-        {
+
+        FirebaseAuth.instance.signInWithEmailAndPassword(email: usernameController.text, password: passwordController.text).then(
+                (value) => Navigator.push(context, MaterialPageRoute(builder: (context) => Account(),))
+        ).onError((error, stackTrace) {
+          print("Error ${error.toString()}");
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Invalid Credintials!!")));
-        }
+        });
+
+
     } else if (_selectedLoginType == 'Collector') {
-      if (username == 'codechef' && password == '123' ||
-          username == 'Codechef' && password == '123' ||
-          username == 'Codechefs' && password == '123' ||
-          username == 'codechefs' && password == '123' ||
-          username == 'CODECHEF' && password == '123' ||
-          username == 'CODECHEFS' && password == '123')
-      {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => pickup()),
-        );
-      }
-      else
-      {
+      FirebaseAuth.instance.signInWithEmailAndPassword(email: usernameController.text, password: passwordController.text).then(
+              (value) => Navigator.push(context, MaterialPageRoute(builder: (context) => pickup(),))
+      ).onError((error, stackTrace) {
+        print("Error ${error.toString()}");
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Invalid Credintials!!")));
-      }
+      });
 
     }
   }
